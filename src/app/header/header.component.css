@@ -1,0 +1,30 @@
+.header-sams {
+  background: #171717;
+  color: #FFFFFF;
+}
+
+.img-logo-sams {
+  width: 10%;
+}
+
+.text-sams-header {
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.padding-nav-item {
+  padding: 32px 20px;
+  cursor: pointer;
+}
+
+.padding-nav-item:hover {
+  background: rgb(50, 50, 50);
+}
+
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}

@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg header-sams menu-fixo">
+  <a class="navbar-brand" (click)="scrollInicio()" style="cursor: pointer">
+    <img class="img-logo-sams" src="assets\img\sams-locacoes-logo.jpeg">
+    <span class="text-sams-header">SAMS - Locações & Montagens</span>
+  </a>
+  <button class="navbar-toggler" style="border-color: white" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item padding-nav-item" (click)="scrollServicos()"><a>Serviços</a></li>
+      <li class="nav-item padding-nav-item"><a>Portfólio</a></li>
+      <li class="nav-item padding-nav-item"><a>Contato</a></li>
+      <li class="nav-item padding-nav-item"><a>Quem somos</a></li>
+      <li class="nav-item padding-nav-item" (click)="abreModalOrcamento(modalOrcamento)"><a>Solicite Orçamento</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ng-template #modalOrcamento>
+
+<!--  <app-modal-orcamento (fecharModalEvent)="fechaModal($event)"></app-modal-orcamento>-->
+
+</ng-template>
