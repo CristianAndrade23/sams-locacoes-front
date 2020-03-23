@@ -1,0 +1,29 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="cadastroModalLabel">Solicitar Orçamento</h5>
+    <button (click)="fecharModal()" style="outline: none;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <span>Empresa</span><br>
+    <input type="text" class="form-control"><br>
+
+    <span>Para o evento - Localização</span><br>
+    <input type="text" class="form-control"><br>
+
+    <span>Vou precisar de:</span><br>
+    <input type="checkbox"><span>Montagem de Stands</span><br>
+    <input type="checkbox"><span>Locação de Mobiliário</span><br>
+    <input type="checkbox"><span>Locação de Jardinagem e Paisagismo</span><br>
+    <input type="checkbox"><span>Comunicação Visual</span><br>
+    <input type="checkbox"><span>Serviço de Buffet</span><br>
+    <input type="checkbox"><span>Outros</span><br>
+  </div>
+
+  <div class="modal-footer">
+    <!--    <button class="btn btn-outline-warning">CANCELAR</button>-->
+    <button class="btn btn-warning btn-block" style="color: white">ENVIAR ORÇAMENTO</button>
+  </div>
+</div>
+

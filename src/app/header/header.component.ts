@@ -9,7 +9,10 @@ import {AnimatedScroll} from '../shared/animated-scroll';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  modalRefOrcamento: BsModalRef;
+
+  constructor(private modalService: BsModalService) {
+  }
 
   ngOnInit() {
   }
@@ -22,11 +25,11 @@ export class HeaderComponent implements OnInit {
     return setTimeout(() => AnimatedScroll.scroll(400), 200);
   }
 
-  // abreModalOrcamento(modalOrcamento) {
-  //   this.modalRefOrcamento = this.modalService.show(modalOrcamento);
-  // }
-  //
-  // fechaModal(evento) {
-  //   if (evento) { this.modalRefOrcamento.hide(); }
-  // }
+  abreModalOrcamento(modalOrcamento) {
+    this.modalRefOrcamento = this.modalService.show(modalOrcamento);
+  }
+
+  fechaModal(evento) {
+    if (evento) { this.modalRefOrcamento.hide(); }
+  }
 }

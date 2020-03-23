@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BsModalRef, BsModalService} from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-conteudo-site',
@@ -7,18 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConteudoSiteComponent implements OnInit {
 
-  constructor() {
+  modalRefOrcamento: BsModalRef;
+
+  constructor(private modalService: BsModalService) {
   }
 
   ngOnInit() {
   }
 
   abreModalOrcamento(modal) {
-
+      this.modalRefOrcamento = this.modalService.show(modal);
   }
-
-  fechaModal(evento) {
-
-  }
-
 }

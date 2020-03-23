@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ConteudoSiteComponent} from './conteudo-site/conteudo-site.component';
 import {HeaderComponent} from './header/header.component';
+import { ModalOrcamentoComponent } from './modal-orcamento/modal-orcamento.component';
+import {ModalModule} from 'ngx-bootstrap';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConteudoSiteComponent,
-    HeaderComponent
+    HeaderComponent,
+    ModalOrcamentoComponent
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
